@@ -1,0 +1,40 @@
+/* ------------------------------------------------------------------------------------------ */
+/* CSS Reset
+/* ------------------------------------------------------------------------------------------ */
+
+*, *::before, *::after {
+  box-sizing: border-box;                         /* Simplify Box Size calculations           */
+  padding: 0;                                     /* Remove default Padding values            */
+  margin:  0;                                     /* Remove default Margin  values            */
+}
+
+:has(:target) {
+  scroll-behavior: smooth;                        /* Enable Smooth Scrolling                  */
+  scroll-padding-block: 2rem;                     /* Offset between the Target and Viewport   */
+}
+
+html {
+  color-scheme: dark light;                       /* Use User-Agent styles for Dark Theme     */
+  line-height: 1;                                 /* Remove spacing caused by Line Height     */
+  hanging-punctuation: first last;                /* Improve Typography for Punctuations      */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;                             /* Balance the # of characters on each line */
+}
+
+p, li {
+  text-wrap: pretty;                              /* Prevent Widows and Orphans               */
+  line-height: 1.5;                               /* Make Text more readable                  */
+}
+
+input, button, textarea, select {
+  font: inherit;                                  /* Make Form Fonts consistent               */
+}
+
+img, picture, svg, video, canvas {
+  display: block;                                 /* Make Media elements Block-Level          */
+  max-inline-size: 100%;                          /* Prevent Media elements from overflowing  */
+}
+
+/* ------------------------------------------------------------------------------------------ */
