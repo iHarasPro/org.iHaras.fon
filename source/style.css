@@ -38,55 +38,43 @@ img, picture, svg, video, canvas {
 }
 
 /* ------------------------------------------------------------------------------------------ */
-/*
-main {
-  padding: 2rem;
-  display: flex;
-  gap: 2rem;
 
-  & > * {
-    flex: 1 1 0;
-  }
-}
-
-section {
-  padding: 2rem;
-  border: 0.25rem solid #BBB;
-  border-radius: 1rem;
-  display: grid;
-  gap: 2rem;
-
-  &.portfolio {
-    grid-template-columns: repeat(6,1fr);
-  }
-}
-
-section.realized,
-section.transactions {
-  display: none;
-}
-
-section.portfolio {
-  max-inline-size: 60rem;
+body {
+  inline-size: min(calc(100% - 2rem),60rem);
   margin-inline: auto;
 }
 
-section h2 {
-  grid-column: 1 / -1;
-}
-
-section header {
+section {
   display: grid;
-  grid-template-columns: subgrid;
-  grid-column: 1 / -1;
+  column-gap: 2rem;
+
+  &#portfolio,
+  &#realized {
+    grid-template-columns: repeat(6,1fr);
+  }
+
+  &#transactions {
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  & h2 {
+    grid-column: 1 / -1;
+  }
+
+  & header {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+  }
 }
 
 details {
   display: contents;
-  summary,
+
+  & summary,
   & > div {
     display: grid;
     grid-template-columns: subgrid;
     grid-column: 1 / -1;
   }
-}*/
+}
