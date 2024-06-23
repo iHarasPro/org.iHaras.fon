@@ -38,3 +38,55 @@ img, picture, svg, video, canvas {
 }
 
 /* ------------------------------------------------------------------------------------------ */
+/*
+main {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+
+  & > * {
+    flex: 1 1 0;
+  }
+}
+
+section {
+  padding: 2rem;
+  border: 0.25rem solid #BBB;
+  border-radius: 1rem;
+  display: grid;
+  gap: 2rem;
+
+  &.portfolio {
+    grid-template-columns: repeat(6,1fr);
+  }
+}
+
+section.realized,
+section.transactions {
+  display: none;
+}
+
+section.portfolio {
+  max-inline-size: 60rem;
+  margin-inline: auto;
+}
+
+section h2 {
+  grid-column: 1 / -1;
+}
+
+section header {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
+
+details {
+  display: contents;
+  summary,
+  & > div {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+  }
+}*/
